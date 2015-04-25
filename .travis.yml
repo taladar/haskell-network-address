@@ -1,0 +1,13 @@
+language: haskell
+
+ghc:
+  - 7.8
+  - 7.10
+
+install:
+  - ghc --version
+  - cabal --version
+  - cabal install --only-dependencies --enable-tests --enable-benchmarks
+
+script:
+  - cabal configure --enable-tests --enable-benchmarks && cabal build && cabal test --show-details=always && cabal bench
