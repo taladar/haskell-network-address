@@ -45,5 +45,5 @@ Benchmark benchmark
   Build-depends:
     base == 4.*,
     Cabal >= 1.9.2 && < 1.23,
-    criterion == 1.1.0.0,
+    criterion >= 0.5.0.0,
     deepseq >= 1.1
